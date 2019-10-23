@@ -1,0 +1,43 @@
+<div *ngIf="hotels">
+  <div><h3>{{title}}</h3></div>
+  <div *ngFor="let p of hotels._embedded.hotels">
+    <div class="col-md-4">
+      <div class="panel panel-default heigted" >
+        <div class="panel-heading">{{p.name}}</div>
+        <div class="panel-body">
+        <img class="img-thumbnail img-rounded btn" (click)="onHotelDetails(p)" [src]="this.catService.host+'/photoHotel/'+p.id+'?ts='+getTS()"/>
+          <div *ngIf="this.authService.isAdmin()">
+            <button (click)="onEditPhoto(p)">
+              <span class="glyphicon glyphicon-edit"></span>
+            </button>
+            <p *ngIf="editPhoto && currentHotel==p">
+              <input type="file" (change)="onSelectedFile($event)">
+              <button class="btn btn-success" (click)="uploadPhoto()">Upload</button>
+              {{progress}}
+            </p>
+          </div>
+
+
+          <div>
+            Tel:{{p.phone}}
+          </div>
+          <div>
+            Adress : {{p.adress}}
+          </div>
+          <div>
+            Number stars: {{p.nbStars}}
+          </div>
+          <div>
+            Number room disponible : {{p.nbRoomDispo}}
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+

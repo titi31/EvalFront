@@ -1,0 +1,69 @@
+
+<div *ngIf="currentHotel">
+  <div class="panel panel-default" *ngIf="mode==0">
+    <div class="panel-heading">Fiche Hotel: {{currentHotel.name}}
+      <div *ngIf="this.authService.isAdmin()">
+      <span class="glyphicon glyphicon-edit pull-right btn" (click)="onEditHotel()"></span>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="col-md-5">
+        <img class="img-thumbnail" [src]="this.catalService.host+'/photoHotel/'+currentHotel.id+'?ts='+getTS()"/>
+        <div *ngIf="this.authService.isAdmin()">
+          <button *ngIf="!editPhoto" (click)="onEditPhoto(currentHotel)">
+            <span class="glyphicon glyphicon-edit"></span>
+          </button>
+          <span *ngIf="editPhoto">
+            <input type="file" (change)="onSelectedFile($event)">
+            <button class="btn btn-success btn-sm" (click)="uploadPhoto()">
+              <span class="glyphicon glyphicon-upload"></span>
+            </button>
+            {{progress}}
+          </span>
+        </div>
+        <div class="col-md-7">
+          <div class="panel panel-default" style="min-height: 300px">
+            <div class="panel-body">
+              Tel : {{currentHotel.phone}}
+            </div>
+            <div class="panel-body">
+              Adress : {{currentHotel.adress}}
+            </div>
+            <div class="panel-body">
+              Number starts : {{currentHotel.nbStars}}
+            </div>
+            <div class="panel-body">
+              Number room disponible : {{currentHotel.nbRoomDispo}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="mode==1">
+    <form #f="ngForm" (ngSubmit)="onUpdateHotel(f.value)">
+      <div class="form-group">
+        <label class="control-label">Name:</label>
+        <input type="text" name="name" ngModel [(ngModel)]="currentHotel.name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Tel:</label>
+        <input type="text" name="name" ngModel [(ngModel)]="currentHotel.tel" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Adress:</label>
+        <input type="text" name="name" ngModel [(ngModel)]="currentHotel.adress" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Number stars:</label>
+        <input type="text" name="name" ngModel [(ngModel)]="currentHotel.nbStars" class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Number room disponible:</label>
+        <input type="text" name="name" ngModel [(ngModel)]="currentHotel.nbRoomDispo" class="form-control">
+      </div>
+      <button class="btn btn-success" type="submit">Update</button>
+    </form>
+  </div>
+</div>
+
