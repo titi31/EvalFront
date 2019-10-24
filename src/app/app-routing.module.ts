@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CityComponent } from './city/city.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { HotelComponent } from './hotel/hotel.component'
 import { LoginComponent } from './login/login.component'
