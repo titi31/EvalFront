@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # WireFrame
 ![alt text](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
 ![alt text](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.54.27.png)
-![Screenshot](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
-![Screenshot](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
