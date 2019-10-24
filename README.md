@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![alt text](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.54.27.png)
 ![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
 ![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+<p align="center">
+  <img src="/Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png" width="350" title="hover text">
+  <img src="/Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.54.27.png" width="350" alt="accessibility text">
+</p>
