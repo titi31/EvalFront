@@ -26,3 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # EvalFront
+# WireFrame
+![alt text](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+![alt text](file:///Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.54.27.png)
+![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+![Screenshot](Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png)
+<p align="center">
+  <img src="/Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.53.45.png" width="350" title="hover text">
+  <img src="/Users/timothelaude/Desktop/Capture%20d’écran%202019-10-24%20à%2009.54.27.png" width="350" alt="accessibility text">
+</p>
